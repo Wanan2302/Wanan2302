@@ -1,0 +1,21 @@
+//修改DMQD5-6   倒叙复制
+#include <stdio.h>
+
+int main(void)
+{
+    int i=0;
+    int a[5]={17,23,36};
+    int b[5];
+
+    for (i=0;i<5;i++) {
+        b[i]=a[4-i];
+    }
+
+    puts(" a   b");
+    puts("-------");
+    for (i=0;i<5;i++) {
+        printf("%3d%3d\n",a[i],b[i]);
+    }
+
+    return 0;
+}
